@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from webdriver_manager.chrome import ChromeDriverManager  # Para gestionar el ChromeDriver automáticamente
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 driver = webdriver.Chrome()
@@ -13,7 +13,7 @@ time.sleep(2)
 
 search_box = driver.find_element(By.NAME, "search_query")
 
-search_query = "python tutorial"
+search_query = "Chavita"
 search_box.send_keys(search_query)
 
 search_box.send_keys(Keys.RETURN)
